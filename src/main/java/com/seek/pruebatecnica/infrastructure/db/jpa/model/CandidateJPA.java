@@ -7,7 +7,6 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Hidden
 @Table(name = "candidates")
 @Entity
 @NoArgsConstructor
