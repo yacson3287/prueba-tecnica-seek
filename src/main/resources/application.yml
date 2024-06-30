@@ -1,0 +1,28 @@
+spring:
+  application:
+  name: demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/seek?createDatabaseIfNotExist=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: seek2024
+
+  flyway:
+    ignoreMigrationPatterns: "*:ignored"
+    outOfOrder: true
+
+  jpa:
+    hibernate:
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+      ddl-auto: none
+
+springdoc:
+  api-docs:
+    enable: true
+  swagger-ui:
+    enable: true
+    path: /doc/swagger-ui.html
+  pathsToMatch: /candidate, /candidate/**
+
+
+
