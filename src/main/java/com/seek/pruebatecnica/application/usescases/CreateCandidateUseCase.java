@@ -28,7 +28,6 @@ public class CreateCandidateUseCase implements ICreateCandidateUseCase {
             var exceptionDetail = new ExceptionDetail("It was not possible execute the action");
             exceptionDetail.addDetail("email", "This email it is use already for other user");
             throw new BadRequestExceptionService(exceptionDetail);
-
         }
     }
 }

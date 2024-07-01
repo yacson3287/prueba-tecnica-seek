@@ -1,7 +1,6 @@
 package com.seek.pruebatecnica.infrastructure.db.jpa.model;
 
 import com.seek.pruebatecnica.domain.entities.Candidate;
-import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.persistence.*;
 import lombok.*;
 

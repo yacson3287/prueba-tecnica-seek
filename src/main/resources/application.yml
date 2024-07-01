@@ -1,11 +1,8 @@
 spring:
   application:
   name: demo
-  datasource:
-    url: jdbc:mysql://localhost:3306/seek?createDatabaseIfNotExist=true
-    driverClassName: com.mysql.cj.jdbc.Driver
-    username: root
-    password: seek2024
+  profiles:
+    active: prod
 
   flyway:
     ignoreMigrationPatterns: "*:ignored"
